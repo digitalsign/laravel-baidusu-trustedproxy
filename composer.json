@@ -24,8 +24,5 @@
                 "Xiaohuilam\\LaravelBaidusuTrustedproxy\\LaravelBaidusuTrustedproxyServiceProvider"
             ]
         }
-    },
-    "conflict": {
-        "xiaohuilam/laravel-aliyun-waf-trustedproxy": "作用冲突"
     }
 }
