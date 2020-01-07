@@ -30,7 +30,7 @@ class UpdateRangeCommand extends Command
      */
     public function handle()
     {
-        $content = file_get_contents('https://api.github.com/repos/digitalsign/laravel-baidusu--trustedproxy/issues/1', false, stream_context_create([
+        $content = file_get_contents('https://api.github.com/repos/digitalsign/laravel-baidusu-trustedproxy/issues/1', false, stream_context_create([
             'http' => [
                 'method' => "GET",
                 'header' => "Accept-language: en\r\n" .
