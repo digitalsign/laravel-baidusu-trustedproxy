@@ -1,13 +1,13 @@
 {
-    "name": "xiaohuilam/laravel-aliyun-waf-trustedproxy",
-    "description": "add aliyun waf's ip ranges to trust proxy",
+    "name": "xiaohuilam/laravel-baidusu-trustedproxy",
+    "description": "add su.baidu.com's ip ranges to trust proxy",
     "type": "library",
     "require": {
         "laravel/framework": ">=5.0"
     },
     "autoload": {
         "psr-4": {
-            "Xiaohuilam\\LaravelAliyunWafTrustedproxy\\": "src/"
+            "Xiaohuilam\\LaravelBaidusuTrustedproxy\\": "src/"
         }
     },
     "license": "MIT",
@@ -21,8 +21,11 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Xiaohuilam\\LaravelAliyunWafTrustedproxy\\LaravelAliyunWafTrustedproxyServiceProvider"
+                "Xiaohuilam\\LaravelBaidusuTrustedproxy\\LaravelBaidusuTrustedproxyServiceProvider"
             ]
         }
+    },
+    "conflict": {
+        "xiaohuilam/laravel-aliyun-waf-trustedproxy": "作用冲突"
     }
 }

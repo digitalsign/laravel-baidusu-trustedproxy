@@ -1,13 +1,13 @@
 <?php
-namespace Xiaohuilam\LaravelAliyunWafTrustedproxy;
+namespace Xiaohuilam\LaravelBaidusuTrustedproxy;
 
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Console\Application as Artisan;
-use Xiaohuilam\LaravelAliyunWafTrustedproxy\Traits\HasCacheKey;
-use Xiaohuilam\LaravelAliyunWafTrustedproxy\Commands\UpdateRangeCommand;
+use Xiaohuilam\LaravelBaidusuTrustedproxy\Traits\HasCacheKey;
+use Xiaohuilam\LaravelBaidusuTrustedproxy\Commands\UpdateRangeCommand;
 
-class LaravelAliyunWafTrustedproxyServiceProvider extends ServiceProvider
+class LaravelBaidusuTrustedproxyServiceProvider extends ServiceProvider
 {
     use HasCacheKey;
 

@@ -1,7 +1,7 @@
 <?php
-namespace Xiaohuilam\LaravelAliyunWafTrustedproxy\Traits;
+namespace Xiaohuilam\LaravelBaidusuTrustedproxy\Traits;
 
 trait HasCacheKey
 {
-    protected $cache_key = 'aliyun_waf_Trustedproxy_ip_ranges';
+    protected $cache_key = 'baidusu_Trustedproxy_ip_ranges';
 }

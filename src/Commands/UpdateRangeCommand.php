@@ -1,9 +1,9 @@
 <?php
-namespace Xiaohuilam\LaravelAliyunWafTrustedproxy\Commands;
+namespace Xiaohuilam\LaravelBaidusuTrustedproxy\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Cache;
-use Xiaohuilam\LaravelAliyunWafTrustedproxy\Traits\HasCacheKey;
+use Xiaohuilam\LaravelBaidusuTrustedproxy\Traits\HasCacheKey;
 
 class UpdateRangeCommand extends Command
 {
@@ -14,14 +14,14 @@ class UpdateRangeCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'waf:update-range';
+    protected $signature = 'baidusu:update-range';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = '阿里云WAF更新回源IP段';
+    protected $description = '百度云加速更新回源IP段';
 
     /**
      * Execute the console command.
@@ -30,7 +30,7 @@ class UpdateRangeCommand extends Command
      */
     public function handle()
     {
-        $content = file_get_contents('https://api.github.com/repos/xiaohuilam/laravel-aliyun-waf-trustedproxy/issues/1', false, stream_context_create([
+        $content = file_get_contents('https://api.github.com/repos/digitalsign/laravel-baidusu--trustedproxy/issues/1', false, stream_context_create([
             'http' => [
                 'method' => "GET",
                 'header' => "Accept-language: en\r\n" .
